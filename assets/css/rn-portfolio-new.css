@@ -1,0 +1,46 @@
+.rn-portfolio-area .rn-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.rn-portfolio .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.rn-portfolio .thumbnail {
+    flex-shrink: 0;
+    height: 200px; /* Set a consistent height for thumbnails */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rn-portfolio .thumbnail img {
+    height: 100%; /* Ensure the image fills the thumbnail area */
+    width: auto;
+    object-fit: cover;
+}
+
+.rn-portfolio .content {
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rn-portfolio .content h4.title {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.rn-portfolio .content .category-info {
+    margin-top: 10px;
+}
