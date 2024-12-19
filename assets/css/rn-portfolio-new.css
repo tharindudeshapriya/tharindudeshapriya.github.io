@@ -44,3 +44,25 @@
 .rn-portfolio .content .category-info {
     margin-top: 10px;
 }
+@media (min-width: 992px) {
+    .modal-body {
+        flex-direction: row; /* Side-by-side layout for larger screens */
+    }
+    .video-container {
+        height: auto; /* Adjust video container height for desktop */
+        padding-top: 0;
+        flex: 1; /* Maintain equal width */
+    }
+}
+
+@media (max-width: 991px) {
+    .modal-body {
+        flex-direction: column; /* Stack video and description for smaller screens */
+    }
+    .video-container {
+        padding-top: 56.25%; /* Maintain 16:9 aspect ratio for video */
+    }
+    .modal-description {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
